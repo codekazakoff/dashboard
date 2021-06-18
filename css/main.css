@@ -408,8 +408,8 @@ tr > td:last-child {
   }
 
   .main-content {
-    width: 100% !important;
-    margin-left: 0 !important;
+    width: 100%;
+    margin-left: 0;
   }
 
   header {
@@ -419,21 +419,22 @@ tr > td:last-child {
 
   #nav-toggle:checked + .sidebar {
     left: 0 !important;
-    z-index: 100;
-    width: 345px;
+    z-index: 100 !important;
+    width: 345px !important;
   }
 
   #nav-toggle:checked + .sidebar .sidebar-brand h2 span {
     padding-left: 2rem;
     text-align: left;
   }
-  #nav-toggle:checked + .sidebar li a {
-    text-align: left;
-    padding-left: 1rem;
-  }
 
   #nav-toggle:checked + .sidebar .sidebar-menu ul li {
     padding-left: 3rem;
+  }
+
+  #nav-toggle:checked + .sidebar li a {
+    text-align: left;
+    padding-left: 1rem;
   }
 
   #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
